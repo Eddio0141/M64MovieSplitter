@@ -21,7 +21,7 @@ function Helper.GetFileExtension(strFilename)
 	if not string.match(strFilename, ".") then
 		return ""
 	end
-	return strFilename:match"\.[^.\\/:*?\"<>|\r\n]+$"
+	return strFilename:match("\\.[^.\\/:*?\"<>|\r\n]+$")
 end
 
 --[[
